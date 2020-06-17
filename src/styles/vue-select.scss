@@ -1,0 +1,43 @@
+@import "vue-select/src/scss/global/_variables.scss";
+
+$vs-state-active-bg: hsl(0, 0%, 24%);
+$vs-dropdown-max-height: 200px;
+
+@import "vue-select/src/scss/vue-select.scss";
+
+.v-select {
+	.vs__selected {
+		color: hsl(0, 0%, 96%);
+	}
+
+	input.vs__search {
+	}
+
+	.vs__search::placeholder,
+	.vs__dropdown-toggle,
+	.vs__dropdown-menu {
+		background: hsl(0, 0%, 14%);
+		color: hsl(0, 0%, 40%);
+
+		// input {
+		// 	color: hsl(0, 0%, 100%);
+		// }
+	}
+
+	.vs__dropdown-option {
+		color: hsl(0, 0%, 92%);
+	}
+	.vs__dropdown-option--disabled {
+		color: hsl(0, 0%, 60%);
+
+		&:after {
+			content: '- Use swap';
+		}
+	}
+
+	.vs__clear,
+	.vs__open-indicator {
+		fill: hsl(0, 0%, 30%);
+		cursor: pointer;
+	}
+}

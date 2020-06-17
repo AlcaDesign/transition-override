@@ -1,0 +1,61 @@
+.button {
+	--color: hsl(0, 0%, 24%);
+	--hover-color: hsl(0, 0%, 30%);
+	--active-color: hsl(0, 0%, 36%);
+	background: var(--color);
+	// padding: 4px 6px 4px 4px;
+	padding: 6px;
+	border-radius: 3px;
+	display: inline-flex;
+	align-items: center;
+	cursor: pointer;
+	user-select: none;
+	font-size: 0.95em;
+	box-sizing: border-box;
+	transition: 50ms background;
+
+	&.icon {
+		padding: 6px;
+		justify-content: center;
+	}
+	& + & {
+		margin-left: 6px;
+	}
+	&.delete {
+		--color: hsl(0, 39%, 23%);
+		--hover-color: hsl(0, 59%, 26%);
+		--active-color: hsl(0, 64%, 35%);
+	}
+	&.checkbox {
+		--color: hsl(0, 0%, 12%);
+		border: 2px solid hsl(0, 0%, 16%);
+
+		.icon {
+			opacity: 0.4;
+		}
+		&[checked] {
+			// --color: hsl(0, 0%, 24%);
+			--color: hsl(225, 29%, 32%);
+			border-color: hsl(0, 0%, 36%);
+
+			.icon {
+				opacity: 1;
+			}
+		}
+	}
+	&:hover {
+		// background: hsl(0, 0%, 28%);
+		background: var(--hover-color);
+	}
+	&:active {
+		background: var(--active-color);
+	}
+	// &.solid,
+	// &.cancel {
+	// 	// background-color: var(--color);
+	// }
+
+	&:not(.icon) .icon {
+		margin: 0 4px 0 0;
+	}
+}

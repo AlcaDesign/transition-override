@@ -1,0 +1,58 @@
+.icon:not(.button) {
+	background: no-repeat;
+	background-size: contain;
+	width: 18px;
+	height: 18px;
+	display: inline-block;
+	vertical-align: middle;
+	border-radius: 20%;
+
+	&[error] {
+		background-color: hsl(0, 100%, 50%);
+	}
+	&.swap-vert {
+		background-image: url(assets/swap_vert.svg);
+	}
+	&.close {
+		background-image: url(assets/close.svg);
+	}
+	&.title {
+		background-image: url(assets/title.svg);
+	}
+	&.edit {
+		background-image: url(assets/edit.svg);
+	}
+	&.toll {
+		background-image: url(assets/toll.svg);
+	}
+	&.photo {
+		background-image: url(assets/photo.svg);
+	}
+	&.search {
+		background-image: url(assets/search.svg);
+	}
+	&.add {
+		background-image: url(assets/add.svg);
+	}
+	&.delete_forever {
+		background-image: url(assets/delete_forever.svg);
+	}
+	&.settings {
+		background-image: url(assets/settings.svg);
+	}
+	&.import_export {
+		background-image: url(assets/import_export.svg);
+	}
+	&.check {
+		background-image: url(assets/check.svg);
+	}
+	&.check_box {
+		background-image: url(assets/check_box_outline_blank.svg);
+	}
+}
+
+.button {
+	&[checked] .icon.check_box {
+		background-image: url(assets/check_box.svg);
+	}
+}

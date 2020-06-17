@@ -1,0 +1,17 @@
+@import "vue-select/src/scss/global/_variables.scss";
+
+input {
+	font-family: inherit;
+	background: hsl(0, 0%, 14%);
+	color: hsl(0, 0%, 100%);
+	outline: none;
+	border: $vs-border-width $vs-border-style $vs-border-color;
+	border-radius: $vs-border-radius;
+	padding: 0 8px;
+	font-size: 1em;
+}
+
+input:not(.vs__search) {
+	height: 34px;
+	box-sizing: border-box;
+}
